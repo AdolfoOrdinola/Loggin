@@ -57,6 +57,7 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
             
             
             
+            
             if var arrUsuarios = UserDefaults.standard.object(forKey: "emojis") as? [[String]]{
                 
                 
