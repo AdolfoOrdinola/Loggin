@@ -22,12 +22,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     
     
+
     
     
     
     
-    var indice = 0
-    var cuentasLocales : [[String]]!
+  //  var indice = 0
+  //  var cuentasLocales : [[String]]!
     
     
     
@@ -48,7 +49,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //     self.pickerView.dataSource = self
 
         
-        logginButton.layer.cornerRadius = 5 //Le da radio a los bordes del botón "Iniciar sesión"
+     //   logginButton.layer.cornerRadius = 5 //Le da radio a los bordes del botón "Iniciar sesión"
       
     }
 
@@ -64,6 +65,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func newCuentaButton(_ sender: UIButton) {
+        
+        
+        
+        
         
         //Este botón es para iniciar sesión, tendrá que comprobar que el username y el password coincidan en el arreglo para poder acceder al contenido, de lo contrario debe de indicar que no coinciden los datos ingresados.
         

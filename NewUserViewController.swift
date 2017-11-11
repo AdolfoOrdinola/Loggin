@@ -62,20 +62,35 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
                 
                 
                 //Luego hay que arreglar el nuevo elemento
-                let nuevoEmoji = [emojiTextField.text!, descripcionTextField.text!]
-                print(emojiTextField.text!) //Imprime en la consola el emoji ingresado
-                print(descripcionTextField.text!)  //Imprime en la consola la descripción ingresada
-                arrEmojis.append(nuevoEmoji)  //Añade el arreglo nombrado 'nuevoEmoji' conformado de los dos objetos al arreglo padre llamado 'arrEmojis'
-                UserDefaults.standard.set(arrEmojis, forKey: "emojis")
+                let nuevaCuenta = [NombreTextField.text!, ApellidoTextField.text!, UserNameTexField.text!, PasswordTextField.text!, ConfirmarPassTextField.text! ]
+                
+                print(NombreTextField.text!) //Imprime en la consola el emoji ingresado
+                print(ApellidoTextField.text!)  //Imprime en la consola la descripción ingresada
+                print(UserNameTexField.text!)
+                print(PasswordTextField.text!)
+                print(ConfirmarPassTextField.text!)
+                
+                
+                arrUsuarios.append(nuevaCuenta)  //Añade el arreglo nombrado 'nuevaCuenta' conformado por los objetos al arreglo padre llamado 'arrUsuarios'
+                
+                
+                
+                UserDefaults.standard.set(arrUsuarios, forKey: "emojis")
+                
+                
             } else{
-                let nuevoEmoji = [emojiTextField.text!, descripcionTextField.text!]
-                UserDefaults.standard.set([nuevoEmoji], forKey: "emojis")
+                let nuevaCuenta = [NombreTextField.text!, ApellidoTextField.text!, UserNameTexField.text!, PasswordTextField.text!, ConfirmarPassTextField.text! ]
+                
+                UserDefaults.standard.set([nuevaCuenta], forKey: "emojis")
             }
+            
             print("Se guardó correctamente")
             //Guardar el arreglo en memoria
             //Si no existe el arreglo en memoria
             //Creamos un arreglo nuevo
             //Guardamos en memoria
+            
+            
         } else {
             let alertController = UIAlertController(title: "Te faltaron datos", message: "Ingresa todos los campos", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -105,7 +120,9 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    } //Oculta el teclado al tocar alguna parte de la pantalla
     
     
     

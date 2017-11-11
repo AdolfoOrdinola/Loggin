@@ -33,6 +33,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Gl3-q9-yDe"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -50,6 +53,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="n9o-AE-ZbI"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -92,6 +98,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="IniciarSesiónButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fuy-sI-ITv"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RoT-9k-qgh"/>
                                     <segue destination="Gmv-nh-StB" kind="show" id="g8j-Se-1Ro"/>
                                 </connections>
                             </button>
@@ -571,7 +579,7 @@
         <image name="logo2" width="110" height="97"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uYc-Xl-juM"/>
+        <segue reference="g8j-Se-1Ro"/>
         <segue reference="ajr-W3-BMb"/>
     </inferredMetricsTieBreakers>
 </document>
