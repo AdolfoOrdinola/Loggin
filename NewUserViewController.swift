@@ -120,6 +120,36 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     
     
     
+    
+    /*
+     var arrayOcupaciones = ["Empleado", "Estuadiante", "Servicios independientes"]
+     
+     
+     
+     func numberOfComponents(in pickerView: UIPickerView) -> Int {
+     return 1
+     }
+     
+     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+     return arrayOcupaciones.count
+     }
+     
+     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+     return arrayOcupaciones[row]
+     }
+     
+     */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     } //Oculta el teclado al tocar alguna parte de la pantalla

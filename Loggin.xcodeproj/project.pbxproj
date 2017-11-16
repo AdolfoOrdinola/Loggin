@@ -12,6 +12,7 @@
 		8C1653C81F8EB91600648F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1653C61F8EB91600648F78 /* Main.storyboard */; };
 		8C1653CA1F8EB91600648F78 /* Logo2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1653C91F8EB91600648F78 /* Logo2.xcassets */; };
 		8C1653CD1F8EB91600648F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1653CB1F8EB91600648F78 /* LaunchScreen.storyboard */; };
+		8C92A0CE1FBA5C5C00BF2A25 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92A0CD1FBA5C5C00BF2A25 /* PerfilViewController.swift */; };
 		8CA8BE041FB65E1F0048A312 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8BE031FB65E1F0048A312 /* NewUserViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		8C1653C91F8EB91600648F78 /* Logo2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Logo2.xcassets; sourceTree = "<group>"; };
 		8C1653CC1F8EB91600648F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C1653CE1F8EB91600648F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C92A0CD1FBA5C5C00BF2A25 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		8CA8BE031FB65E1F0048A312 /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewUserViewController.swift; path = ../NewUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 				8C1653C41F8EB91600648F78 /* ViewController.swift */,
 				8C1653C61F8EB91600648F78 /* Main.storyboard */,
 				8CA8BE031FB65E1F0048A312 /* NewUserViewController.swift */,
+				8C92A0CD1FBA5C5C00BF2A25 /* PerfilViewController.swift */,
 				8C1653C91F8EB91600648F78 /* Logo2.xcassets */,
 				8C1653CB1F8EB91600648F78 /* LaunchScreen.storyboard */,
 				8C1653CE1F8EB91600648F78 /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				8C1653C51F8EB91600648F78 /* ViewController.swift in Sources */,
 				8CA8BE041FB65E1F0048A312 /* NewUserViewController.swift in Sources */,
+				8C92A0CE1FBA5C5C00BF2A25 /* PerfilViewController.swift in Sources */,
 				8C1653C31F8EB91600648F78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
