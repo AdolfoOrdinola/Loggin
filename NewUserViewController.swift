@@ -150,6 +150,11 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     
     
     
+    
+    
+    
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     } //Oculta el teclado al tocar alguna parte de la pantalla
