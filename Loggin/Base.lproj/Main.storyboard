@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ySx-Uo-Dpz">
-                                <rect key="frame" x="37.5" y="200" width="300" height="60.5"/>
+                                <rect key="frame" x="37.5" y="244" width="300" height="60.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llC-5d-sWT">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
@@ -40,7 +41,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yBV-Gi-H0C">
-                                <rect key="frame" x="37.5" y="290.5" width="300" height="60.5"/>
+                                <rect key="frame" x="37.5" y="334.5" width="300" height="60.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSt-vh-0Md">
                                         <rect key="frame" x="0.0" y="0.0" width="88.5" height="20.5"/>
@@ -60,7 +61,7 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="tmB-t3-xN1">
-                                <rect key="frame" x="137.5" y="60" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="104" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="KuO-rz-3b9"/>
                                     <constraint firstAttribute="height" constant="100" id="Uj2-VU-6vZ"/>
@@ -82,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKS-Jr-Jxs">
-                                <rect key="frame" x="123.5" y="411" width="128" height="30"/>
+                                <rect key="frame" x="123.5" y="455" width="128" height="30"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="0uQ-Xz-dBc"/>
@@ -539,19 +540,23 @@
                                     <constraint firstAttribute="width" constant="150" id="gLU-dQ-J63"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq8-bR-wc9">
-                                <rect key="frame" x="141" y="617" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efr-bp-0k7">
+                                <rect key="frame" x="93.5" y="617" width="187.5" height="30"/>
                                 <state key="normal" title="Cerrar sesión">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="HoS-67-pvJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kq8-bR-wc9" firstAttribute="centerX" secondItem="Xou-FD-rLu" secondAttribute="centerX" id="5rn-DA-I7u"/>
                             <constraint firstItem="tZk-Ec-jUJ" firstAttribute="centerX" secondItem="Xou-FD-rLu" secondAttribute="centerX" id="LcX-8j-Deq"/>
-                            <constraint firstItem="3eg-qm-TXi" firstAttribute="bottom" secondItem="kq8-bR-wc9" secondAttribute="bottom" constant="20" id="r6N-Er-0Ls"/>
+                            <constraint firstItem="efr-bp-0k7" firstAttribute="width" secondItem="Xou-FD-rLu" secondAttribute="width" multiplier="0.5" id="cja-2U-Df4"/>
+                            <constraint firstItem="3eg-qm-TXi" firstAttribute="bottom" secondItem="efr-bp-0k7" secondAttribute="bottom" constant="20" id="pvs-wo-uLA"/>
                             <constraint firstItem="tZk-Ec-jUJ" firstAttribute="top" secondItem="3eg-qm-TXi" secondAttribute="top" constant="20" id="s41-yP-xoX"/>
+                            <constraint firstItem="efr-bp-0k7" firstAttribute="centerX" secondItem="Xou-FD-rLu" secondAttribute="centerX" id="sEQ-p7-ul0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3eg-qm-TXi"/>
                     </view>
@@ -588,6 +593,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8KZ-n0-KGg"/>
-        <segue reference="ajr-W3-BMb"/>
+        <segue reference="HoS-67-pvJ"/>
     </inferredMetricsTieBreakers>
 </document>
